@@ -10,19 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dog = Dog("ポチ", 3)
-        dog.say()
-        val bigdog = BigDog("ヨーゼフ", 15)
-        bigdog.say()
+        val human = Human("○○", 99)
+        human.say()
     }
-        private fun total(last: Int) {
-            var sum = 0
-            for (i in 1..last) {
-                sum += i
-            }
-
-            Log.d("kotlintest", sum.toString())
-        }
-
 
 }
